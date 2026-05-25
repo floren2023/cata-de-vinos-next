@@ -149,12 +149,15 @@ export default function Home() {
                 <div key={i} className="bg-white border border-neutral-200/60 p-8 flex flex-col justify-between hover:shadow-xl transition-shadow duration-300">
                   <div>
                     {/* Marcador de posición visual para la botella */}
-                    <div className="w-full h-48 bg-neutral-100 mb-6 flex items-center justify-center text-vino/20 font-serif text-5xl">
+                    <div className="relative w-full h-48 md:h-64 bg-neutral-100 mb-6 flex items-center justify-center text-vino/20 font-serif text-5xl">
                       
                       {/* //productos🍷 */}
-                      <Image src={vino.image} alt={vino.nombre} width={200} height={120} className="h-48 w-1/2"/>
+                      <Image src={vino.image} alt={vino.nombre} fill
+          sizes="(max-w-768px) 100vw, (max-w-400px) 50vw, 33vw"
+          className="object-cover"
+          priority={true}/>
                     </div>
-                    <span className="text-xs uppercase tracking-widest text-vino font-bold">{vino.tipo}</span>
+                    <span className="text-xs uppercase tracking-widest mb-4 ml-4 text-vino font-bold bg-gray-200 mx-auto text-center">{vino.tipo}</span>
                     <h3 className="text-xl font-serif text-neutral-900 mt-2 mb-3">{vino.nombre}</h3>
                     <p className="text-sm text-neutral-500 leading-relaxed">{vino.descripcion}</p>
                   </div>
