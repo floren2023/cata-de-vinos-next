@@ -84,10 +84,10 @@ export default function HeroCarousel() {
            shadow-gray-200">
             {slide.title}
           </h1>
-          <div className="text-lg md:text-xl max-w-2xl text-neutral-200 mb-8 font-light text-center mx-auto">
+          <div className="bg-neutral-800  p-2 text-lg font-mediun md:text-xl max-w-2xl text-red-100 mb-8  text-center mx-auto">
             {slide.subtitle}
           </div>
-          <button className="bg-vino hover:bg-vino-light text-white px-8 py-3 rounded-none uppercase tracking-widest text-sm transition-colors duration-300 shadow-lg">
+          <button className="bg-vino hover:bg-vino-light font-[merienda] text-white px-8 py-3 rounded-none uppercase tracking-widest text-sm transition-colors duration-300 shadow-lg">
             {slide.cta}
           </button>
         </div>

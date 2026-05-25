@@ -28,7 +28,20 @@
   }
 }
 
+.merienda {
+  font-family: "Merienda", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
+
+.bitter {
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 body {
   background: var(--background);
   color: var(--foreground);

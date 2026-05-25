@@ -76,7 +76,7 @@ export default function Home() {
           <div className="text-xl font-serif tracking-widest font-bold text-neutral-900">
             RAÍCES & <span className="text-vino">VID</span>
           </div>
-          <nav className="hidden md:flex gap-8 text-sm uppercase tracking-wider font-medium text-neutral-600">
+          <nav className="hidden md:flex font-[merienda] gap-8 text-sm uppercase tracking-wider font-medium text-neutral-600">
             <a href="#" className="hover:text-vino transition-colors text-vino">Inicio</a>
             <a href="#eventos" className="hover:text-vino transition-colors">Experiencias</a>
             <a href="#productos" className="hover:text-vino transition-colors">Nuestros Vinos</a>
