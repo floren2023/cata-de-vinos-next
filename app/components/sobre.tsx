@@ -48,7 +48,7 @@ export default function SobreNosotros() {
           {/* Imagen conceptual de barricas o viñedo viejo */}
           <div className="relative h-[450px] w-full rounded-sm overflow-hidden shadow-xl border border-stone-200">
             <Image 
-              src="/images/image1.jpg" // Cambiar por foto real de vuestra bodega/barricas
+              src="/images/image1.webp" // Cambiar por foto real de vuestra bodega/barricas
               alt="Barricas de vino en bodega artesanal" 
               fill
               className="object-cover filter grayscale-[10%]"

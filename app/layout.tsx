@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Bitter, Geist, Geist_Mono, Merienda } from "next/font/google";
+import { Bitter,  Merienda } from "next/font/google";
 import "./globals.css";
+import { HeroNavigation } from "./components/hero";
+import Footer from "./components/footer";
 
 export const metadata: Metadata = {
   title: "Cata de Vinos",
@@ -10,15 +12,7 @@ export const metadata: Metadata = {
  const bitter = Bitter({variable: "--font-bitter-serif", subsets: ['latin'] })
 const merienda = Merienda({variable: "--font-merienda-serif", subsets: ['latin'] }) 
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 
 
@@ -32,7 +26,16 @@ export default function RootLayout({
       lang="en"
       className={`${bitter.variable} ${merienda.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className=" flex flex-col bg-white text-neutral-900 min-h-screen font-sans">
+        
+      {/* 1. BARRA DE NAVEGACIÓN */}
+    <HeroNavigation/>
+
+        {children}
+         {/* 5. FOOTER */}
+        <Footer/>
+
+        </body>
     </html>
   );
 }

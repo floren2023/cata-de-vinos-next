@@ -18,7 +18,7 @@ const slides: Slide[] = [
     subtitle: "Vive catas de vino clandestinas y eventos gastronómicos diseñados para los paladares más curiosos.",
     cta: "Ver Próximos Eventos",
     bgClass: "bg-neutral-900",
-    image:"/images/image4.jpg",
+    image:"/images/image4.webp",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const slides: Slide[] = [
     subtitle: "Descubre bodegas de autor, variedades recuperadas y joyas ocultas de nuestra tierra.",
     cta: "Explorar la Colección",
     bgClass: "bg-neutral-800",
-    image:"/images/image2.jpg",
+    image:"/images/image2.webp",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const slides: Slide[] = [
     subtitle: "Maridajes artísticos, música en vivo y la guía de sumilleres apasionados.",
     cta: "Reservar una Experiencia",
     bgClass: "bg-vino-dark",
-    image:"/images/image3.jpg",
+    image:"/images/image3.webp",
   },
 ];
 
