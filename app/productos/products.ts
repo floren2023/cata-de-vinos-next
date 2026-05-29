@@ -1,6 +1,7 @@
 // data/products.ts
 
-import { Product } from "./Product";
+import Product from "./product";
+
 
 
 export const PRODUCTS_DATA: Product[] = [

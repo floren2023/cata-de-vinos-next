@@ -44,6 +44,7 @@ const Eventos = () => {
                       <th className="py-4 font-medium hidden md:table-cell">Descripción</th>
                       <th className="py-4 font-medium">Fecha / Lugar</th>
                       <th className="py-4 font-medium text-right">Precio</th>
+                      <th className="py-4 font-medium text-right"></th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-neutral-100 text-sm">
@@ -60,6 +61,9 @@ const Eventos = () => {
                         </td>
                         <td className="py-6 text-right font-mono font-bold text-neutral-900">
                           {evento.precio}
+                        </td>
+                        <td className="py-6 text-right font-mono font-bold text-neutral-900">
+                          <button type="button" className='bg-neutral-200 text-red-800 italic font-light text-sm p-2 rounded-sm hover:bg-neutral-300'>Reservar</button>
                         </td>
                       </tr>
                     ))}

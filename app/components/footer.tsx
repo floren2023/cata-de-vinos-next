@@ -1,3 +1,4 @@
+import Social from "./social"
 
 
 const Footer = () => {
@@ -10,7 +11,8 @@ const Footer = () => {
               Recibe invitaciones a catas privadas, lanzamientos clandestinos y acceso exclusivo a lotes muy limitados.
             </p>
           </div>
-          <form className="flex w-full max-w-md md:ml-auto">
+          <Social/>
+         {/*  <form className="flex w-full max-w-md md:ml-auto">
             <input 
               type="email" 
               placeholder="Tu correo electrónico" 
@@ -20,7 +22,7 @@ const Footer = () => {
             <button type="submit" className="bg-white text-vino hover:bg-neutral-100 px-6 text-xs uppercase tracking-widest font-bold transition-colors">
               Unirse
             </button>
-          </form>
+          </form> */}
         </div>
         <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between text-xs text-neutral-400 gap-4">
           <p>© 2026 Raíces & Vid. Todos los derechos reservados.</p>
