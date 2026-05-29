@@ -15,16 +15,16 @@ export const HeroNavigation = () => {
         
         {/* LOGO */}
         <div className="text-xl font-serif tracking-widest font-bold text-neutral-900">
-          RAÍCES & <span className="text-vino">VID</span>
+        <a href="/">RAÍCES & <span className="text-vino">VID</span></a>  
         </div>
 
         {/* NAVEGACIÓN DESKTOP (Se oculta en móviles/tablets con 'hidden', aparece en 'md:flex') */}
         <nav className="hidden md:flex font-[merienda] gap-8 text-sm uppercase tracking-wider font-medium text-neutral-600">
-          <a href="#" className="hover:text-vino transition-colors text-vino">Inicio</a>
-          <a href="#eventos" className="hover:text-vino transition-colors">Experiencias</a>
-          <a href="#ofertas" className="hover:text-vino transition-colors">Selección</a>
-          <a href="/products" className="hover:text-vino transition-colors">Nuestros Vinos</a>
-          <a href="#sobre" className="hover:text-vino transition-colors">Sobre Nosotros</a>
+          <a href="/" className="hover:text-vino transition-colors text-vino">Inicio</a>
+          <a href="/eventos" className="hover:text-vino transition-colors">Eventos</a>
+          <a href="/seleccion" className="hover:text-vino transition-colors">Selección</a>
+          <a href="/productos" className="hover:text-vino transition-colors">Nuestros Vinos</a>
+          <a href="/sobre" className="hover:text-vino transition-colors">Sobre Nosotros</a>
         </nav>
 
         {/* BOTÓN ACCIÓN DESKTOP (Visible solo de pantallas medianas en adelante) */}
@@ -60,11 +60,11 @@ export const HeroNavigation = () => {
       {/* DESPLEGABLE MÓVIL Y TABLET (Se activa condicionalmente) */}
       <div className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-screen opacity-100 border-b border-neutral-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
         <nav className="flex flex-col bg-white px-6 pt-2 pb-6 gap-4 font-[merienda] text-sm uppercase tracking-wider font-medium text-neutral-600">
-          <a href="#" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors text-vino">Inicio</a>
-          <a href="#eventos" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Experiencias</a>
-          <a href="#ofertas" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Selección</a>
-          <a href="/products" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Nuestros Vinos</a>
-          <a href="#sobre" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Sobre Nosotros</a>
+          <a href="/" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors text-vino">Inicio</a>
+          <a href="/eventos" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Experiencias</a>
+          <a href="/seleccion" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Selección</a>
+          <a href="/productos" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Nuestros Vinos</a>
+          <a href="/sobre" onClick={() => setIsOpen(false)} className="py-2 hover:text-vino transition-colors">Sobre Nosotros</a>
           
           {/* Botón de acción integrado en el menú móvil */}
           <button className="mt-4 w-full bg-vino hover:bg-vino-light text-white text-xs uppercase tracking-widest py-3 transition-colors font-medium text-center">

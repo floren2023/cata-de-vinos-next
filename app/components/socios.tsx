@@ -20,7 +20,7 @@ const socios = () => {
             <Image
               src="/logos/bordeaux.png"
               alt="logo bordeaux"
-              className="h-20 " width={150} height={50}
+              className="h-20 " width={200} height={50}
             />
           </div>
           <div className="justify-center content-center items-center  mx-auto">

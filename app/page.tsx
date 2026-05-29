@@ -23,10 +23,7 @@ export default function Home() {
         {/* 4. VISTA PREVIA DE OFERTAS */}
         <Ofertas/>
 
-        {/* 5. VISTA PREVIA DE SOBRE NOSOSTROS */}
-          <section id="sobre" className="bg-neutral-50 border-t border-b border-neutral-100 py-24">
-              <SobreNosotros/>
-          </section>
+        
           <Testimonios/>
           <Socios/>
       </main>

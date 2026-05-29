@@ -3,7 +3,8 @@
 import  { useState, useMemo, ChangeEvent } from 'react';
 import { PRODUCTS_DATA } from './products';
 import ProductCard from '../components/ProductCard';
-import { Product } from './Product';
+import Product from './product';
+
 
 
 export default function ProductsPage() {

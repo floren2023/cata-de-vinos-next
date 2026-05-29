@@ -1,6 +1,6 @@
 // components/ProductCard.tsx
-import React from 'react';
-import { Product } from '../products/Product';
+import Product from "../productos/product"
+
 
 
 interface ProductCardProps {
