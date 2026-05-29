@@ -17,6 +17,5 @@ export const auth = betterAuth({
       clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
     },
   },
-  // Puedes añadir más plugins aquí (ej. social logins, MFA, etc.)
-   trustedOrigins: ["http://localhost:3000"], 
+  
 });
